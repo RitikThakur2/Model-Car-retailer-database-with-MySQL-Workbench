@@ -1,0 +1,49 @@
+This report presents an in-depth analysis of the Mint Classics Company's inventory across warehouses, the relationship between inventory levels and sales performance, and identification of non-moving or slow-moving products. The findings provide clear opportunities for warehouse consolidation, inventory reduction, and improved stock management to reduce costs while maintaining timely customer service.
+ 
+___________________________________________________________________________________________________________________________________________
+
+1. Inventory Distribution by Warehouse
+Source: inventory_by_warehouse.sql
+A summary of product counts and total inventory quantity per warehouse reveals how items are distributed.
+Key metrics:
+Warehouse A (East) holds the most unique products and inventory.
+Warehouse B (South) has the fewest products and lowest total inventory.
+Insight: Warehouse B's comparatively low product variety and stock volume suggest it may be possible to eliminate or repurpose this facility by redistributing stock to other warehouses.
+
+2. Sales vs. Inventory Analysis
+Source: inventory_vs_sales.sql
+This analysis compares total quantity sold per product against current inventory stock levels.
+Observations:
+Many high-sales products maintain appropriate or slightly high stock levels, supporting prompt order fulfillment.
+Some products have large inventories but correspondingly low sales, indicating potential overstock.
+Implication: By adjusting stock levels to better align with sales velocity, the company can reduce unnecessary inventory holding costs without risking stockouts on fast-moving items.
+
+3. Identification of Slow-Moving or Non-Moving Items
+Source: slow_movers.sql
+Products with zero recorded sales but existing inventory were isolated as prime candidates for removal or discounting, freeing up valuable warehouse space.
+Examples include classic models with units still in stock but no sales activity, suggesting customer demand is lacking.
+Recommendation: These items should be evaluated for discontinuation, liquidation, or promotional clearance to optimize inventory footprint.
+Expanding the threshold could identify slow movers (1985 Toyota Supra 0 units sold), enabling a more nuanced approach to inventory rationalization.
+
+___________________________________________________________________________________________________________________________________________
+Business Recommendations:--
+1.Warehouse Consolidation:
+Consider closing or repurposing Warehouse B (South) due to low inventory and product variety, potentially relocating stock to larger facilities to reduce overheads.
+2.Inventory Rationalization:
+Remove or redistribute products with no sales, especially those with significant stock quantities, to minimize carrying costs and free warehouse space. Here 1985 Toyota Supra whose  0 units are sold needs to be be optimised
+3.Stock Level Optimization:
+Adjust inventory levels of products where stock significantly exceeds sales to avoid overstocking, while ensuring fast sellers maintain sufficient availability for 24-hour order fulfillment.
+4.Data-Driven Monitoring:
+Establish ongoing monitoring mechanisms using similar SQL queries to continuously identify slow-moving items and warehouse utilization for proactive inventory management.
+
+___________________________________________________________________________________________________________________________________________
+
+Project Impact
+1.Expected cost savings from reduced warehouse operations and lower inventory carrying costs.
+2.Maintained or improved service levels by focusing inventory in facilities with higher throughput.
+3.Strategic basis for informed decision-making on inventory and facility management.
+
+Summary
+By applying SQL queries, this project identified key areas for inventory optimization, enabling Mint Classics to reduce unnecessary costs and improve operational efficiency. Data-driven insights maintain balance between cost reduction and customer satisfaction, ensuring timely deliveries and enhanced business sustainability.
+
+
